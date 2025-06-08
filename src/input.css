@@ -4,6 +4,7 @@
     --color-white: #FFFFFF;
     --color-gray: #FFFFFFB2;
     --color-primary: #39965F;
+    --color-primary-active: #2f7c50;
     --color-black_1b: #1B1B1B;
     --color-gray-border: #FFFFFF40;
     --default-font-family: 'Poppins', sans-serif;
@@ -31,6 +32,13 @@
         font-style: normal;
         font-weight: 600;
         src: url('./fonts/poppins-v23-latin-600.woff2') format('woff2');
+    }
+    @font-face {
+        font-display: swap; 
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        src: url('./fonts/poppins-v23-latin-500.woff2') format('woff2'); 
     }
 }
 

@@ -7,12 +7,14 @@
       "Courier New", monospace;
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-white: #FFFFFF;
+    --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --default-font-family: 'Poppins', sans-serif;
     --default-mono-font-family: var(--font-mono);
     --color-gray: #FFFFFFB2;
     --color-primary: #39965F;
+    --color-primary-active: #2f7c50;
     --color-black_1b: #1B1B1B;
     --color-gray-border: #FFFFFF40;
   }
@@ -296,6 +298,10 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
   .border-gray-border {
     border-color: var(--color-gray-border);
   }
@@ -357,6 +363,10 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
@@ -376,6 +386,27 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .hover\:bg-primary-active {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-primary-active);
+      }
+    }
+  }
+  .hover\:text-primary {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-primary);
+      }
+    }
+  }
+  .hover\:text-primary-active {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-primary-active);
+      }
+    }
   }
   .max-sm\:grid-cols-1 {
     @media (width < 40rem) {
@@ -402,11 +433,6 @@
       gap: 1.25rem;
     }
   }
-  .max-sm\:text-\[\.6875rem\] {
-    @media (width < 40rem) {
-      font-size: .6875rem;
-    }
-  }
   .max-sm\:text-\[\.8125rem\] {
     @media (width < 40rem) {
       font-size: .8125rem;
@@ -427,11 +453,6 @@
       font-size: 1.0625rem;
     }
   }
-  .max-sm\:text-\[1\.625rem\] {
-    @media (width < 40rem) {
-      font-size: 1.625rem;
-    }
-  }
   .max-sm\:text-\[1\.1875rem\] {
     @media (width < 40rem) {
       font-size: 1.1875rem;
@@ -440,46 +461,6 @@
   .max-sm\:text-\[1\.9375rem\] {
     @media (width < 40rem) {
       font-size: 1.9375rem;
-    }
-  }
-  .max-sm\:text-\[2\.0625rem\] {
-    @media (width < 40rem) {
-      font-size: 2.0625rem;
-    }
-  }
-  .max-sm\:text-\[15px\] {
-    @media (width < 40rem) {
-      font-size: 15px;
-    }
-  }
-  .max-sm\:text-\[17px\] {
-    @media (width < 40rem) {
-      font-size: 17px;
-    }
-  }
-  .max-sm\:text-\[19px\] {
-    @media (width < 40rem) {
-      font-size: 19px;
-    }
-  }
-  .max-sm\:text-\[26px\] {
-    @media (width < 40rem) {
-      font-size: 26px;
-    }
-  }
-  .max-sm\:text-\[1\] {
-    @media (width < 40rem) {
-      color: 1;
-    }
-  }
-  .max-sm\:text-\[13\] {
-    @media (width < 40rem) {
-      color: 13;
-    }
-  }
-  .max-sm\:text-\[19\] {
-    @media (width < 40rem) {
-      color: 19;
     }
   }
 }
@@ -504,6 +485,13 @@
     font-style: normal;
     font-weight: 600;
     src: url('./fonts/poppins-v23-latin-600.woff2') format('woff2');
+  }
+  @font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./fonts/poppins-v23-latin-500.woff2') format('woff2');
   }
 }
 span {
