@@ -214,6 +214,9 @@
   .grid {
     display: grid;
   }
+  .table {
+    display: table;
+  }
   .h-\[\.5rem\] {
     height: .5rem;
   }
@@ -238,8 +241,14 @@
   .flex-1 {
     flex: 1;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -361,6 +370,13 @@
   .text-white {
     color: var(--color-white);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .max-sm\:grid-cols-1 {
     @media (width < 40rem) {
       grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -411,9 +427,59 @@
       font-size: 1.0625rem;
     }
   }
+  .max-sm\:text-\[1\.625rem\] {
+    @media (width < 40rem) {
+      font-size: 1.625rem;
+    }
+  }
+  .max-sm\:text-\[1\.1875rem\] {
+    @media (width < 40rem) {
+      font-size: 1.1875rem;
+    }
+  }
   .max-sm\:text-\[1\.9375rem\] {
     @media (width < 40rem) {
       font-size: 1.9375rem;
+    }
+  }
+  .max-sm\:text-\[2\.0625rem\] {
+    @media (width < 40rem) {
+      font-size: 2.0625rem;
+    }
+  }
+  .max-sm\:text-\[15px\] {
+    @media (width < 40rem) {
+      font-size: 15px;
+    }
+  }
+  .max-sm\:text-\[17px\] {
+    @media (width < 40rem) {
+      font-size: 17px;
+    }
+  }
+  .max-sm\:text-\[19px\] {
+    @media (width < 40rem) {
+      font-size: 19px;
+    }
+  }
+  .max-sm\:text-\[26px\] {
+    @media (width < 40rem) {
+      font-size: 26px;
+    }
+  }
+  .max-sm\:text-\[1\] {
+    @media (width < 40rem) {
+      color: 1;
+    }
+  }
+  .max-sm\:text-\[13\] {
+    @media (width < 40rem) {
+      color: 13;
+    }
+  }
+  .max-sm\:text-\[19\] {
+    @media (width < 40rem) {
+      color: 19;
     }
   }
 }
@@ -486,6 +552,11 @@ span {
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -496,6 +567,7 @@ span {
       --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
     }
   }
 }
