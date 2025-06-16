@@ -28,41 +28,39 @@
         <div class="grid grid-cols-4 gap-[1.25rem] max-sm:grid-cols-2">
             <div class=" py-[.625rem] bg-black_1b rounded-[.75rem] flex flex-col items-center justify-center gap-[10px] border border-gray-border">
                 <img src="./images/Frame 11.svg" alt="">
-                <p class="font-semibold text-white text-[1.25rem] max-sm:text-[1.0625rem]">Telefon raqam</p>
-                <p class="text-gray max-sm:text-[.8125rem]">+998 (90) 584-23-24</p>
+                <p class="font-semibold text-white text-[1.25rem] max-sm:text-[1.0625rem] text-center">Telefon raqam</p>
+                <p class="text-gray max-sm:text-[.8125rem]">(90) 584-23-24</p>
             </div>
-            <div class=" py-[.625rem] bg-black_1b rounded-[.75rem] flex flex-col items-center justify-center gap-[10px] border border-gray-border">
+            <div class=" py-[.625rem] bg-black_1b rounded-[.75rem] flex flex-col items-center justify-center gap-[.625rem] border border-gray-border">
                 <img src="./images/Frame 11 (2).svg" alt="">
                 <p class="font-semibold text-white text-[1.25rem] max-sm:text-[1.0625rem]">Telegram</p>
-                <p class="text-gray max-sm:text-[.8125rem]">@waxriyore</p>
+                <a class="bg-primary text-white rounded-[.375rem] px-[.5rem] hover:bg-primary-active" href="https://t.me/waxriyore" target="_blank" rel="noopener noreferrer">ochish</a>
             </div>
             <div class=" py-[.625rem] bg-black_1b rounded-[.75rem] flex flex-col items-center justify-center gap-[10px] border border-gray-border">
                 <img src="./images/icons8-instagram (6).svg" alt="" width="58" height="58">
                 <p class="font-semibold text-white text-[1.25rem] max-sm:text-[1.0625rem]">Instagram</p>
-                <p class="text-gray max-sm:text-[.8125rem]">@shax_rahimov</p>
+                <a class="bg-primary text-white rounded-[.375rem] px-[.5rem] hover:bg-primary-active" href="https://www.instagram.com/shax_rahimov/" target="_blank" rel="noopener noreferrer">ochish</a>
             </div>
             <div class=" py-[.625rem] bg-black_1b rounded-[.75rem] flex flex-col items-center justify-center gap-[10px] border border-gray-border">
                 <img src="./images/icons8-github (2).svg" alt="" width="58" height="58">
                 <p class="font-semibold text-white text-[1.25rem] max-sm:text-[1.0625rem]">GitHub</p>
-                <p class="text-gray max-sm:text-[.8125rem]">@rahimov-shaxriyor</p>
+                <a class="bg-primary text-white rounded-[.375rem] px-[.5rem] hover:bg-primary-active" href="https://github.com/rahimov-shaxriyor" target="_blank" rel="noopener noreferrer">ochish</a>
             </div>
         </div>
-        <p class="font-bold text-[2rem] text-white mb-[.5rem] max-sm:text-[1.5rem] mt-[3.3125rem]">Markaz</p>
+        <p class="font-bold text-[2rem] text-white mb-[.5rem] max-sm:text-[1.5rem] mt-[3.3125rem]">So'rov yuborish</p>
         <div class="w-[7rem] h-[.5rem] bg-primary rounded-[.625rem] mb-[1.5rem] animation_move"></div>
-        <div class="flex justify-center mb-[2rem]">
-            <div class="w-full max-w-[43.75rem] py-[.625rem] px-[.625rem] bg-black_1b rounded-[.75rem] flex items-center justify-center gap-[3.125rem] border border-gray-border max-sm:flex-col max-sm:gap-[1.25rem]">
-                <img class="rounded-[.625rem]" src="./images/Screenshot 2025-06-05 150837.png" alt="" width="300px" height="300px">
-                <div class="flex flex-col items-center">
-                    <p class="font-semibold text-white text-[1.25rem] max-sm:text-[1.0625rem]">Najot ta'lim markazi</p>
-                    <p class="text-[1.125rem] text-white max-sm:text-[.9375rem]">Manzil :</p>
-                    <p class="text-gray max-sm:text-[.8125rem]">Farg'ona shahar, Marg'ilon soy bo'yida</p>
-                </div>
-            </div>
-        </div>
-        <div class="flex justify-center mb-[2rem]">
-            <a class="px-[2.75rem] py-[.5rem] bg-primary rounded-[.5rem] text-[1.125rem] text-white hover:bg-primary-active max-sm:text-[.9375rem]" href="index.html">Bosh sahifa</a>
+        <div class="flex flex-col items-center mb-[2rem]">
+            <form class="w-full max-w-[62.5rem] bg-black_1b px-[1.25rem] py-[1.25rem] rounded-[.75rem] border border-gray-border" id="myForm" autocomplete="off">
+                <section class="flex gap-[1.25rem] mb-[1.25rem]  max-sm:flex-col">
+                    <input class="w-full text-white px-[.75rem] py-[.3125rem] rounded-[.5rem] border border-gray-border max-sm:text-[.875rem]" type="text" name="name" placeholder="Familiya-ismingizni kiriting..."  required>
+                    <input class="w-full text-white px-[.75rem] py-[.3125rem] rounded-[.5rem] border border-gray-border max-sm:text-[.875rem]" type="number" name="phone_number" placeholder="Telefon raqamingizni kiriting..."  required>
+                </section>
+                <textarea class="w-full text-white px-[.75rem] py-[.3125rem] rounded-[.5rem] border border-gray-border mb-[1.25rem] max-sm:text-[.875rem]" name="comment" placeholder="Izoh..." rows="5" required></textarea>
+                <button class="px-[30px] py-[.3125rem] bg-primary rounded-[.5rem] text-white hover:bg-primary-active max-sm:text-[.875rem]" type="submit">Yuborish</button>
+            </form>
         </div>
     </main>
 
+    <script src="app.js"></script>
 </body>
 </html>
